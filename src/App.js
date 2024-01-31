@@ -17,7 +17,7 @@ function App() {
         var weather = axios(`https://api.openweathermap.org/data/2.5/weather?q=${enteredValue}&appid=ee949cc184264765ad2f53c854eb1a81`)
 
         weather.then(function(dalta){
-            console.log(dalta.data)
+            // console.log(dalta.data)
             setDeg(dalta.data.main.temp)
             setCity(dalta.data.name)
             setDesc(dalta.data.weather[0].description)
